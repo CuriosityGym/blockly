@@ -58,7 +58,7 @@ Blockly.Blocks['Connect'] = {
         .appendField("Connect Drone");	
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(160);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -70,7 +70,7 @@ Blockly.Blocks['arming'] = {
         .appendField("Arm Drone");	
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(160);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -82,7 +82,7 @@ Blockly.Blocks['Disarming'] = {
         .appendField("Disarm Drone");	
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(160);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -153,7 +153,7 @@ Blockly.Blocks['Disconnect'] = {
     this.appendDummyInput()
         .appendField("Disconnect Drone");	
     this.setPreviousStatement(true, null);
-    this.setColour(160);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
