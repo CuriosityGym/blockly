@@ -43,7 +43,7 @@ Blockly.Blocks['initdrone'] = {
         .setCheck(null).appendField('Set IP').setAlign(Blockly.ALIGN_RIGHT);
     this.appendValueInput("Port")
         .setCheck(null).appendField('Set Port').setAlign(Blockly.ALIGN_RIGHT);
-    this.setInputsInline(false);
+	this.setInputsInline(false);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -59,6 +59,48 @@ Blockly.Blocks['arming'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(160);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['Disarming'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Disarm Drone");	
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(160);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['SetThrottle'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Throttle Drone");
+    this.appendValueInput("Value")
+        .setCheck(null).appendField('value').setAlign(Blockly.ALIGN_RIGHT);
+	this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['SetRoll'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Roll Drone");
+	this.appendValueInput("ROLL")		
+        .setCheck(null).appendField('Roll').setAlign(Blockly.ALIGN_RIGHT);
+	this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }

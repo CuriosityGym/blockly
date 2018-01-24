@@ -36,3 +36,33 @@ Blockly.Python['initdrone'] = function(block) {
   console.log(code);
   return code;
 };
+
+Blockly.Python['arming'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.arm()\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['Disarming'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.Disarm()\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['SetThrottle'] = function(block) {
+  var value_throttle = Blockly.Python.valueToCode(block, 'Throttle', Blockly.Python.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.setThrottle("+value_throttle+")\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['SetRoll'] = function(block) {
+  var value_roll = Blockly.Python.valueToCode(block, 'Roll', Blockly.Python.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.SetRoll("+value_roll+")\n";
+  console.log(code);
+  return code;
+};
