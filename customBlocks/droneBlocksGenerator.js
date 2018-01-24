@@ -37,9 +37,16 @@ Blockly.Python['initdrone'] = function(block) {
   return code;
 };
 
+Blockly.Python['Connect'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.Connect()\n";
+  console.log(code);
+  return code;
+};
+
 Blockly.Python['arming'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = "drone.arm()\n";
+  var code = "drone.Arm()\n";
   console.log(code);
   return code;
 };
@@ -62,7 +69,30 @@ Blockly.Python['SetThrottle'] = function(block) {
 Blockly.Python['SetRoll'] = function(block) {
   var value_roll = Blockly.Python.valueToCode(block, 'Roll', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = "drone.SetRoll("+value_roll+")\n";
+  var code = "drone.setRoll("+value_roll+")\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['SetPitch'] = function(block) {
+  var value_Pitch = Blockly.Python.valueToCode(block, 'Pitch', Blockly.Python.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.SetPitch("+value_Pitch+")\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['SetYaw'] = function(block) {
+  var value_Yaw = Blockly.Python.valueToCode(block, 'Yaw', Blockly.Python.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.SetYaw("+value_Yaw+")\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['Disconnect'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "drone.closeConnection()\n";
   console.log(code);
   return code;
 };
