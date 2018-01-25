@@ -30,7 +30,7 @@
   </p>
   
   <div id="blocklyDiv" style="height: 600px; width: 800px;"></div>
-
+  <div id="codeDiv" style="height: 600px; width: 500px;float:left;margin-left:20px; border:1px solid #cccccc">&nbsp;</div>
   <xml id="toolbox" style="display: none">
     <category name="Logic">
       <category name="If">
@@ -179,7 +179,8 @@
       // Generate JavaScript code and display it.
       Blockly.Python.INFINITE_LOOP_TRAP = null;
       var code = Blockly.Python.workspaceToCode(demoWorkspace);
-      alert(code);
+     // alert(code);
+	  document.getElementById('codeDiv').innerHTML="<pre><code>"+code+"</code></pre>";
     }
 
     
