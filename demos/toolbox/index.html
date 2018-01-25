@@ -137,15 +137,12 @@
     <category name="Functions" custom="PROCEDURE"></category>
 	
     <sep></sep>
-    <category name="Input/Output">
-	<block type="serial_print">
-        <value name="CONTENT">
-          <block type="text">
-            <field name="TEXT"></field>
-          </block>
-        </value>
-      </block>
-	 </category> 
+    <category name="Control">
+      <block type="text"></block>
+	   <block type="Delay"></block>
+	   <block type="Break"></block>
+    </category>
+	 
 	 
 	<sep></sep>
 	
@@ -179,8 +176,8 @@
       // Generate JavaScript code and display it.
       Blockly.Python.INFINITE_LOOP_TRAP = null;
       var code = Blockly.Python.workspaceToCode(demoWorkspace);
-     // alert(code);
 	  document.getElementById('codeDiv').innerHTML="<pre><code>"+code+"</code></pre>";
+
     }
 
     

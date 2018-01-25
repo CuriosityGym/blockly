@@ -32,7 +32,7 @@ Blockly.Python['initdrone'] = function(block) {
   var value_ip = Blockly.Python.valueToCode(block, 'IP', Blockly.Python.ORDER_ATOMIC);
   var value_port = Blockly.Python.valueToCode(block, 'Port', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = "drone=Drone("+value_ip+","+value_port+")\n";
+  var code = "import socket,time, math\ndrone=Drone("+value_ip+","+value_port+")\n";
   console.log(code);
   return code;
 };
@@ -93,6 +93,21 @@ Blockly.Python['SetYaw'] = function(block) {
 Blockly.Python['Disconnect'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = "drone.closeConnection()\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['Delay'] = function(block) {
+	var value_Delay = Blockly.Python.valueToCode(block, 'Delay', Blockly.Python.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "time.sleep("+value_Delay+")\n";
+  console.log(code);
+  return code;
+};
+
+Blockly.Python['Break'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "break\n";
   console.log(code);
   return code;
 };
