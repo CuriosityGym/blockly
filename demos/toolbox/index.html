@@ -137,8 +137,10 @@
     <category name="Functions" custom="PROCEDURE"></category>
 	
     <sep></sep>
-    <category name="Text">
+    <category name="Control">
       <block type="text"></block>
+	   <block type="Delay"></block>
+	   <block type="Break"></block>
     </category>
 	 
 	 
@@ -175,6 +177,7 @@
       Blockly.Python.INFINITE_LOOP_TRAP = null;
       var code = Blockly.Python.workspaceToCode(demoWorkspace);
       alert(code);
+	  console.log();
     }
 
     

@@ -158,3 +158,30 @@ Blockly.Blocks['Disconnect'] = {
  this.setHelpUrl("");
   }
 };
+
+Blockly.Blocks['Delay'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Delay");	
+	this.appendValueInput("Delay")		
+        .setCheck(null).appendField('value').setAlign(Blockly.ALIGN_RIGHT);
+	this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+	this.setNextStatement(true, null);
+    this.setColour(160);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['Break'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Break");	
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(160);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
