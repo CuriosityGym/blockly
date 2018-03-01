@@ -52,18 +52,6 @@ Blockly.Blocks['initdrone'] = {
   }
 };
 
-Blockly.Blocks['Connect'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField("Connect Drone");	
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['arming'] = {
   init: function() {
     this.appendDummyInput()
