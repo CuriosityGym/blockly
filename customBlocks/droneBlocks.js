@@ -173,3 +173,18 @@ Blockly.Blocks['Break'] = {
  this.setHelpUrl("");
   }
 };
+
+Blockly.Blocks['Print'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Print");	
+	this.appendValueInput("Print")		
+        .setCheck(null).setAlign(Blockly.ALIGN_RIGHT);
+	this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+	this.setNextStatement(true, null);
+    this.setColour(160);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};

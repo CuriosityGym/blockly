@@ -106,3 +106,11 @@ Blockly.Python['Break'] = function(block) {
   console.log(code);
   return code;
 };
+
+Blockly.Python['Print'] = function(block) {
+	var value_Delay = Blockly.Python.valueToCode(block, 'Print', Blockly.Python.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "print("+value_Delay+")\n";
+  console.log(code);
+  return code;
+};
